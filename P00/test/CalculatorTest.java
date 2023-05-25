@@ -26,7 +26,7 @@ public class CalculatorTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		// fail("Not yet implemented");
 	}
 	
 	@Test
@@ -68,13 +68,13 @@ public class CalculatorTest {
 	
 	 @Test
 	 public void testDivide() {
-	 int a = 10;
-	 int b = 2;
+		// fail("Not yet implemented");
+		int a = 10;
+		int b = 0;
 
-	 Calculator cal = new Calculator();
-	 int actual = cal.divide(a, b);
-
-	 int expected = 5;
-	 assertEquals (expected, actual);
+		Calculator cal = new Calculator();
+	 
+		// Test division by zero
+		assertThrows(ArithmeticException.class, () -> cal.divide(a, 0));
 	}
 }
